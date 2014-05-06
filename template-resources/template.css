@@ -1,0 +1,168 @@
+/****************************************
+ * @imports (mostly fonts)
+ ****************************************/
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
+/****************************************
+ * RESET RULES
+ ****************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****************************************
+ * SITE RULES
+ ****************************************/
+
+body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+/****************************************
+ * HEADER
+ ****************************************/
+
+h1 {
+    font-size: 36pt;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+}
+
+#ncs-logo {
+    float: left;
+}
+
+header {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+    height: auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav ol {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 1em;
+}
+
+header nav .dropdown-button {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 0.25em;
+    cursor: pointer;
+    /* Clicking the button should open the menu,
+     * not highlight the text in the menu. Chrome
+     * still requires the vendor prefix.
+     * 
+     * TODO: remove the vendor prefix once I hook
+     * up the PHP tool that will auto-generate them.
+     */
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+header nav .dropdown-list {
+    display: none;
+    border: 1px solid black;
+}
+
+header nav .visible-dropdown-list {
+    display: block;
+    position: absolute;
+    width: auto;
+    background-color: white;
+    padding: 0.25em;
+    /* Make it the same size as the container and start it
+     * just below the container. The 2px top margin leaves
+     * 1px of space for the container's border plus 1 more
+     * just to look nice.
+     */
+    margin-top: 2px;
+}
+
+/* Add margins only BETWEEN links. Such links
+ * are always followed by another, so this selector
+ * works */
+header nav .dropdown-button + .dropdown-button {
+    margin-left: 2em;
+}
+
+/****************************************
+ * CONTENT
+ ****************************************/
+
+article {
+    clear: both;
+    padding-top: 2em;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0));
+}
+
+p {
+    margin-top: 1em;
+}
+
+/****************************************
+ * FOOTER
+ ****************************************/
+
+#paypal-form {
+    text-align: center;
+}
+
+footer {
+    border-top: 1px black dotted;
+    margin-top: 1em;
+}
