@@ -112,6 +112,7 @@ header nav .dropdown-button {
      */
     -webkit-user-select: none;
     user-select: none;
+    position: relative;
 }
 
 header nav .dropdown-list {
@@ -121,16 +122,13 @@ header nav .dropdown-list {
 
 header nav .visible-dropdown-list {
     display: block;
-    position: absolute;
-    width: auto;
     background-color: white;
     padding: 0.25em;
-    /* Make it the same size as the container and start it
-     * just below the container. The 2px top margin leaves
-     * 1px of space for the container's border plus 1 more
-     * just to look nice.
-     */
-    margin-top: 2px;
+    position: absolute;
+    left: 0;
+    margin-top: 12px;
+    max-width: 200%;
+    white-space: nowrap;
 }
 
 /* Add margins only BETWEEN links. Such links
