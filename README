@@ -8,4 +8,10 @@ curl -sS https://getcomposer.org/installer | php
 
 php composer.phar install
 
-3) Go!
+
+===
+Vagrant
+
+There is a Vagrantfile in this directory. If you have Vagrant installed and
+configured you can run "vagrant up" to start a virtual machine that will serve
+the content in this directory on localhost:8080.
