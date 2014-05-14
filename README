@@ -1,0 +1,11 @@
+Setup:
+
+1) Install Composer:
+
+curl -sS https://getcomposer.org/installer | php
+
+2) Run composer to install Twig, etc.
+
+php composer.phar install
+
+3) Go!

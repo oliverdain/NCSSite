@@ -1,0 +1,4 @@
+/composer.lock
+/composer.phar
+/template_cache/
+/vendor/
