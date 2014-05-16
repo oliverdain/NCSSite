@@ -167,11 +167,8 @@ p {
  * FOOTER
  ****************************************/
 
-#paypal-form {
-    text-align: center;
-}
-
 footer {
     border-top: 1px black dotted;
     margin-top: 1em;
+    text-align: center;
 }
