@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>{% block title %}Network Charter School{% endblock %}</title>
-        <link type="text/css" rel="stylesheet" href="resources/template.css">
-        <script src="resources/javascript/jquery-2.1.0.min.js"></script>
-        <script src="resources/javascript/template.js"></script>
-        {% block extrahead %}
-        {% endblock %}
+      <title>{% block title %}Network Charter School{% endblock %}</title>
+      <link type="text/css" rel="stylesheet" href="resources/template.css">
+      <script src="resources/javascript/jquery-2.1.0.min.js"></script>
+      <script src="resources/javascript/template.js"></script>
+
+      <meta name="viewport" content="width=device-width">
+
+      {% block extrahead %}
+      {% endblock %}
     </head>
     <body>
         <header>
@@ -16,6 +19,9 @@
                  id="ncs-logo">
             <h1>Network Charter School</h1>
             <nav>
+               {# This is hidden on big screens but becomes visible on
+                  mobile devices when the menu is hidden. #}
+                  <a id="menu-button">Menu</a>
                 <ol>
                     <li class="dropdown-button">About NCS
                         <ol class="dropdown-list">
