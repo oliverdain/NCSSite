@@ -97,13 +97,13 @@ header h1 {
    display: none;
 }
 
-header nav ol {
+#nav-menu {
     list-style-type: none;
     text-align: center;
     margin-top: 1em;
 }
 
-header nav .dropdown-button {
+.dropdown-button {
     display: inline-block;
     border: 1px solid black;
     padding: 0.25em;
@@ -120,16 +120,16 @@ header nav .dropdown-button {
     position: relative;
 }
 
-header nav .dropdown-list {
+.dropdown-list {
     display: none;
     border: 1px solid black;
 }
 
-header nav .dropdown-item {
+.dropdown-item {
    padding: 0.5em;
 }
 
-header nav .visible-dropdown-list {
+.visible-dropdown-list {
     display: block;
     background-color: white;
     position: absolute;
@@ -142,7 +142,7 @@ header nav .visible-dropdown-list {
 /* Add margins only BETWEEN links. Such links
  * are always followed by another, so this selector
  * works */
-header nav .dropdown-button + .dropdown-button {
+.dropdown-button + .dropdown-button {
     margin-left: 2em;
 }
 
@@ -230,7 +230,43 @@ footer {
       margin: 1em;
    }
 
-   header nav ol {
+   #nav-menu {
       display: none;
+   }
+
+   #nav-menu.visible-nav-menu {
+      display: block;
+   }
+
+   #nav-menu {
+      position: absolute;
+      background-color: white;
+   }
+
+   .dropdown-button {
+       display: block;
+       border: 1px solid black;
+       padding: 0.25em;
+       cursor: pointer;
+       /* Clicking the button should open the menu,
+        * not highlight the text in the menu. Chrome
+        * still requires the vendor prefix.
+        * 
+        * TODO: remove the vendor prefix once I hook
+        * up the PHP tool that will auto-generate them.
+        */
+       -webkit-user-select: none;
+       user-select: none;
+       position: relative;
+   }
+
+   .dropdown-button + .dropdown-button {
+      margin-left: 0;
+      border-top: none;
+   }
+
+   .visible-dropdown-list {
+      left: 100%;
+      top: -13px;
    }
 }

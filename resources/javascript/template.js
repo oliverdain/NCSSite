@@ -9,6 +9,10 @@ var setup = function() {
           $list.addClass('visible-dropdown-list');
         }
     });
+
+    $('#menu-button').on('click', function(e) {
+      $('#nav-menu').toggleClass('visible-nav-menu');
+    });
 };
 
 $(document).ready(setup);
