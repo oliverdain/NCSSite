@@ -172,7 +172,7 @@ p {
  ****************************************/
 
 footer {
-    border-top: 1px black dotted;
+    border-top: 1px black solid;
     margin-top: 1em;
     text-align: center;
 }
