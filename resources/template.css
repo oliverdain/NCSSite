@@ -146,6 +146,11 @@ header h1 {
     margin-left: 2em;
 }
 
+.dropdown-item a {
+   text-decoration: none;
+   color: black;
+}
+
 header nav .dropdown-item + .dropdown-item {
    border-top: 1px solid black;
 }

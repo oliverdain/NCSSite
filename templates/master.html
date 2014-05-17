@@ -23,6 +23,21 @@
                   mobile devices when the menu is hidden. #}
                 <a id="menu-button">Menu</a>
                 <ol id="nav-menu">
+                   {% for menuEntry in menu|keys %}
+                   <li class="dropdown-button">
+                     {{ menuEntry }}
+                     <ol class="dropdown-list">
+                        {% for item in menu[menuEntry] %}
+                        <li class="dropdown-item">
+                           <a href="{{ item.url }}">{{ item.menu_text }}</a>
+                        </li>
+                        {% endfor %}
+                     </ol>
+                   </li>
+                   {% endfor %}
+                </ol>
+                <!-- 
+                <ol id="nav-menu">
                     <li class="dropdown-button">About NCS
                         <ol class="dropdown-list">
                             <li class="dropdown-item">
@@ -43,6 +58,7 @@
 
                     <li class="dropdown-button">Our Partners</li>
                 </ol>
+-->
             </nav>
             <div class="clearfix"></div>
         </header>
