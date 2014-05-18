@@ -1,6 +1,7 @@
 var setup = function() {
     var hideAllSubMenus = function() {
       $('.visible-dropdown-list').removeClass('visible-dropdown-list');
+      $('.selected-dropdown-button').removeClass('selected-dropdown-button');
     };
 
     // If the browser window is small a media query will be activated and there
@@ -40,6 +41,7 @@ var setup = function() {
         // hiding one that was visible).
         hideAllSubMenus();
         if (display) {
+          $target.addClass('selected-dropdown-button');
           $list.addClass('visible-dropdown-list');
         }
       } else {

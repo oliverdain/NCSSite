@@ -118,6 +118,12 @@ header h1 {
     -webkit-user-select: none;
     user-select: none;
     position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0));
+}
+
+.selected-dropdown-button {
+   background-image: none;
+   background-color: white;
 }
 
 .dropdown-list {
@@ -165,7 +171,7 @@ article {
     padding-left: 0.5em;
     padding-right: 0.5em;
     line-height: 120%;
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(230, 237, 14, 0.5), rgba(230, 237, 14, 0));
 }
 
 p {

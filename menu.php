@@ -16,6 +16,10 @@ $menu = array(
       new MenuItem('Our Charter', 'charter.php')),
    'Students and Families' => array(
       new MenuItem('Calendar', 'calendar.php'),
-      new MenuItem('Classes', 'classes.php'))
+      new MenuItem('Classes', 'classes.php')),
+   'Our Partners' => array(
+      new MenuItem('Le Petit Gourmet', 'lepetit.php'),
+      new MenuItem('MECCA', 'mecca.php'),
+      new MenuItem('Nearby Nature', 'nn.php'))
    );
 ?>
