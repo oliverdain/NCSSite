@@ -1,5 +1,6 @@
 {
     "require": {
-        "twig/twig": "1.*"
+        "twig/twig": "1.*",
+        "css-crush/css-crush": "dev-master"
     }
 }

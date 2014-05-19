@@ -109,13 +109,8 @@ header h1 {
     padding: 0.25em;
     cursor: pointer;
     /* Clicking the button should open the menu,
-     * not highlight the text in the menu. Chrome
-     * still requires the vendor prefix.
-     * 
-     * TODO: remove the vendor prefix once I hook
-     * up the PHP tool that will auto-generate them.
+     * not highlight the text in the menu.
      */
-    -webkit-user-select: none;
     user-select: none;
     position: relative;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0));

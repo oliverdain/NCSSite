@@ -1,6 +1,7 @@
 <?php
 
 require_once 'vendor/twig/twig/lib/Twig/Autoloader.php';
+require_once 'vendor/css-crush/css-crush/CssCrush.php';
 require_once 'menu.php';
 
 Twig_Autoloader::register();
@@ -13,7 +14,8 @@ $twig = new Twig_Environment($loader, array(
 
 
 $template = $twig->loadTemplate('index.html');
-echo $template->render(array('menu' => $menu));
+$css_tag = csscrush_tag('resources/template.css');
+echo $template->render(array('menu' => $menu, 'css_tag' => $css_tag));
 
 ?>
 
