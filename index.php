@@ -14,7 +14,7 @@ $twig = new Twig_Environment($loader, array(
 
 
 $template = $twig->loadTemplate('index.html');
-$css_tag = csscrush_tag('resources/template.css');
+$css_tag = csscrush_tag('resources/template.css', array('minify' => false));
 echo $template->render(array('menu' => $menu, 'css_tag' => $css_tag));
 
 ?>
