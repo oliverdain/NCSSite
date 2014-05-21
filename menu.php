@@ -12,14 +12,15 @@ class MenuItem {
 
 $menu = array(
    'About NCS' => array(
-      new MenuItem('Introduction to NCS', 'intro.php'),
-      new MenuItem('Our Charter', 'charter.php')),
+      new MenuItem('Introduction to NCS', 'intro.html'),
+      new MenuItem('Our Charter', 'charter.html'),
+      new MenuItem('Enrollment', 'enrollment.html')),
    'Students and Families' => array(
-      new MenuItem('Calendar', 'calendar.php'),
-      new MenuItem('Classes', 'classes.php')),
+      new MenuItem('Calendar', 'calendar.html'),
+      new MenuItem('Classes', 'classes.html')),
    'Our Partners' => array(
-      new MenuItem('Le Petit Gourmet', 'lepetit.php'),
-      new MenuItem('MECCA', 'mecca.php'),
-      new MenuItem('Nearby Nature', 'nn.php'))
+      new MenuItem('Le Petit Gourmet', 'lepetit.html'),
+      new MenuItem('MECCA', 'mecca.html'),
+      new MenuItem('Nearby Nature', 'nn.html'))
    );
 ?>

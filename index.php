@@ -13,7 +13,13 @@ $twig = new Twig_Environment($loader, array(
 ));
 
 
-$template = $twig->loadTemplate('index.html');
+if ($_GET['page']) {
+   $page = $_GET['page'];
+} else {
+   $page = 'index.html';
+}
+
+$template = $twig->loadTemplate($page);
 $css_tag = csscrush_tag('resources/template.css', array('minify' => false));
 echo $template->render(array('menu' => $menu, 'css_tag' => $css_tag));
 
