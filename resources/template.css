@@ -77,6 +77,7 @@ h2 {
    font-size: 24pt;
    font-weight: bold;
    font-family: 'Bitter', serif;
+   margin-bottom: 0.5em;
 }
 
 .error {
@@ -274,11 +275,7 @@ footer {
        /* Clicking the button should open the menu,
         * not highlight the text in the menu. Chrome
         * still requires the vendor prefix.
-        * 
-        * TODO: remove the vendor prefix once I hook
-        * up the PHP tool that will auto-generate them.
         */
-       -webkit-user-select: none;
        user-select: none;
        position: relative;
    }
