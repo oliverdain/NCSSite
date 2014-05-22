@@ -73,6 +73,16 @@ h1 {
     font-family: 'Bitter', serif;
 }
 
+h2 {
+   font-size: 24pt;
+   font-weight: bold;
+   font-family: 'Bitter', serif;
+}
+
+.error {
+   color: red;
+}
+
 #ncs-logo {
     float: left;
 }
