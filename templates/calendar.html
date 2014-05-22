@@ -10,6 +10,9 @@
 */
 .cal-container {
    position: relative;
+   /* Height 0 but padding of 75% means it'll be 100% width but have a height
+   that is 75% of that thus giving us the right aspect ratio for a calendar
+   that's 800 x 600 */
    padding-bottom: 75%;
    height: 0;
    overflow: hidden;
@@ -46,11 +49,11 @@
 <h2>School Calendar</h2>
 
 <div id="big-cal" class="cal-container">
-   <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=networkcharterschool%40gmail.com&amp;color=%232952A3&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " frameborder="0" scrolling="no" width="800" height="600"></iframe>
+   <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=networkcharterschool%40gmail.com&amp;color=%232952A3&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " frameborder="0" scrolling="no" width="800" height="600"></iframe>
 </div>
 
 <div id="small-cal" class="cal-container">
-   <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=networkcharterschool%40gmail.com&amp;color=%232952A3&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " frameborder="0" scrolling="no" width="800" height="600"></iframe>
+   <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTabs=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=networkcharterschool%40gmail.com&amp;color=%232952A3&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " frameborder="0" scrolling="no" width="800" height="600"></iframe>
 </div>
 
 {% endblock %}
