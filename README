@@ -8,8 +8,19 @@ curl -sS https://getcomposer.org/installer | php
 
 php composer.phar install
 
+===
+
+Basic functionality:
+
+1) All content comes from static .html files each of which is a twig template inheriting from master.html. To add a new page create a new .html file, have it inherit from master.html and put it in the templates directory. See any file in that directory for examples.
+
+2) The menu is generated as per menu.php. To add a new page to the new or reorgainize the menu edit this file.
+
+
+3) The CSS in template.css is modified by css crush. That tool adds vendor prefixes, fixes for known browser bugs, etc. You therefore do not need to worry about these issues - just write standard CSS3 and let CSS Crush do the rest. IMPORTANT: this means you should always edit template.css *not* template.crush.css as the later is automatically generated from the former.
 
 ===
+
 Vagrant
 
 There is a Vagrantfile in this directory. If you have Vagrant installed and
