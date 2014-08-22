@@ -12,6 +12,7 @@ class MenuItem {
 
 $menu = array(
    'About NCS' => array(
+      new MenuItem('Home', 'index.html'),
       new MenuItem('Introduction to NCS', '/intro.html'),
       new MenuItem('Our Charter', '/charter.html'),
       new MenuItem('Enrollment', '/enrollment.html')),
