@@ -80,6 +80,14 @@ h2 {
    margin-bottom: 0.5em;
 }
 
+h3 {
+   font-size: 18pt;
+   font-weight: bold;
+   font-family: 'Bitter', serif;
+   margin-bottom: 0.5em;
+   margin-top: 0.5em;
+}
+
 .error {
    color: red;
 }
