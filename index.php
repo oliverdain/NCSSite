@@ -12,6 +12,19 @@ $twig = new Twig_Environment($loader, array(
     'auto_reload' => true
 ));
 
+$CSS_DIR = 'resources/';
+$COMPILED_CSS_DIR = $CSS_DIR . 'compiled_css';
+
+if (!file_exists($COMPILED_CSS_DIR)) {
+   mkdir($COMPILED_CSS_DIR);
+}
+
+$css_files = array();
+foreach (glob($CSS_DIR . '*.css') as $css_file) {
+   $css_files[$css_file] = csscrush_tag($css_file,
+      array('minify' => false, 'output_dir' => $COMPILED_CSS_DIR));
+}
+
 
 function render_404($requested_page) {
    header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found"); 
@@ -24,9 +37,8 @@ function render_404($requested_page) {
 // the normal stuff master.html needs (the menu, the <link> tag for the 
 // generated CSS, etc.)
 function render_template($page, $extra_template_args = NULL) {
-   global $twig, $menu;
-   $css_tag = csscrush_tag('/resources/template.css', array('minify' => false));
-   $template_data = array('menu' => $menu, 'css_tag' => $css_tag);
+   global $twig, $menu, $css_files;
+   $template_data = array('menu' => $menu, 'css_files' => $css_files);
    if (isset($extra_template_args)) {
       $template_data = array_merge($template_data, $extra_template_args);
    }

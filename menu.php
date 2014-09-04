@@ -22,6 +22,7 @@ $menu = array(
    'Our Partners' => array(
       new MenuItem('Le Petit Gourmet', '/lepetit.html'),
       new MenuItem('MECCA', '/mecca.html'),
-      new MenuItem('Nearby Nature', '/nn.html'))
+      new MenuItem('Nearby Nature', '/nn.html'),
+      new MenuItem('Peace Village', '/peace-village.html'))
    );
 ?>
