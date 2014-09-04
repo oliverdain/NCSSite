@@ -7,5 +7,22 @@ div.class-description {
 }
 
 div.class-instructor:before {
-content: "Instructor: ";
+   content: "Instructor: ";
+}
+
+div.class-title {
+   font-weight: bold;
+}
+
+div.class-credits:before {
+   content: "Credit(s): ";
+}
+
+div.class-times:before {
+   content: "Time Offered: ";
+}
+
+div.time-slot {
+   margin-left: 2em;
+   font-style: italic;
 }
