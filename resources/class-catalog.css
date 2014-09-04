@@ -23,6 +23,20 @@ div.class-times:before {
 }
 
 div.time-slot {
-   margin-left: 2em;
    font-style: italic;
+   display: inline-block;
+}
+
+div.catalog-class {
+   margin-bottom: 2em;
+}
+
+h3.class-provider {
+   border-top: 2px solid black;
+   padding-top: 0.5em;
+}
+
+h4.class-location {
+   border-bottom: 2px solid black;
+   padding-bottom: 0.5em;
 }
