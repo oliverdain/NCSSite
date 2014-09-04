@@ -1,0 +1,11 @@
+div.class-description {
+   font-style: italic;
+   margin-left: 2em;
+   margin-right: 2em;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+
+div.class-instructor:before {
+content: "Instructor: ";
+}
