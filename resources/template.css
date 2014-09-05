@@ -67,42 +67,6 @@ body {
  * HEADER
  ****************************************/
 
-h1 {
-    font-size: 36pt;
-    font-weight: bold;
-    font-family: 'Bitter', serif;
-}
-
-h2 {
-   font-size: 24pt;
-   font-weight: bold;
-   font-family: 'Bitter', serif;
-   margin-bottom: 0.5em;
-}
-
-h3 {
-   font-size: 18pt;
-   font-weight: bold;
-   font-family: 'Bitter', serif;
-   margin-bottom: 0.5em;
-   margin-top: 0.5em;
-}
-
-h4 {
-   font-size: 16pt;
-   font-weight: bold;
-   font-family: 'Bitter', serif;
-   margin-bottom: 0.5em;
-   margin-top: 0.5em;
-}
-
-img.partner-logo {
-   float: right;
-}
-
-.error {
-   color: red;
-}
 
 #ncs-logo {
     float: left;
@@ -137,6 +101,14 @@ header h1 a {
     list-style-type: none;
     text-align: center;
     margin-top: 1em;
+}
+
+#nav-menu  li {
+    list-style-type: none;
+}
+
+#nav-menu ol {
+   margin-left: 0;
 }
 
 .dropdown-button {
@@ -205,6 +177,43 @@ article {
     line-height: 120%;
     background-color: rgb(250, 243, 105);
     background-image: linear-gradient(to bottom, rgb(250, 243, 105) 20%, rgb(255, 255, 255) 90%);
+}
+
+h1 {
+    font-size: 36pt;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+}
+
+h2 {
+   font-size: 24pt;
+   font-weight: bold;
+   font-family: 'Bitter', serif;
+   margin-bottom: 0.5em;
+}
+
+h3 {
+   font-size: 18pt;
+   font-weight: bold;
+   font-family: 'Bitter', serif;
+   margin-bottom: 0.5em;
+   margin-top: 0.5em;
+}
+
+h4 {
+   font-size: 16pt;
+   font-weight: bold;
+   font-family: 'Bitter', serif;
+   margin-bottom: 0.5em;
+   margin-top: 0.5em;
+}
+
+img.partner-logo {
+   float: right;
+}
+
+.error {
+   color: red;
 }
 
 p {
@@ -298,6 +307,10 @@ footer {
 
    #nav-menu.visible-nav-menu {
       display: block;
+   }
+
+   ol#nav-menu {
+      margin-left: 0;
    }
 
    #nav-menu {
