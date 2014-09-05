@@ -18,6 +18,10 @@ div.class-credits:before {
    content: "Credit(s): ";
 }
 
+div.class-grades:before {
+   content: "Grades: ";
+}
+
 div.class-times:before {
    content: "Time Offered: ";
 }
